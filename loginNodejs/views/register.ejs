@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/register.css'/>
+</head>
+<body>
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+
+<% include ../views/navBar.ejs %>
+<div id="container">
+<form method="post" action="/register">
+    <table>
+        <tr>
+            <td>
+                <label>
+                    First Name :
+                </label>
+            </td>
+            <td>
+                <input type="text" name="fname" id="fname"
+                       placeholder="Enter your first name or given name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>
+                    Last Name :
+                </label>
+            </td>
+            <td>
+                <input type="text" name="lname" id="lname"
+                       placeholder="Enter your surname">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>
+                    Email (Use this for login to your account) :
+                </label>
+            </td>
+            <td>
+                <input type="email" name="email" id="email"
+                       placeholder="Enter your email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>
+                    Enter Alternate Email :
+                </label>
+            </td>
+            <td>
+                <input type="email" name="altEmail" id="altEmail"
+                       placeholder="Enter any alternate email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>
+                    Create a password :
+                </label>
+            </td>
+            <td>
+                <input type="password" name="password" id="password"
+                       placeholder="Enter a strong password">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>
+                    Confirm Password :
+                </label>
+            </td>
+            <td>
+                <input type="password" name="cPassword" id="cPassword"
+                       placeholder="Re Enter your password">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>
+                    Enter your Mobile no. :
+                </label>
+            </td>
+            <td>
+                <input type="text" name="mobile" id="mobile"
+                       placeholder="Enter your mobile no.">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>
+                    Date of Birth :
+                </label>
+            </td>
+            <td>
+                <input type="date" name="dob" id="dob"
+                       placeholder="Enter your Birth date">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit"> Register </button>
+            </td>
+            <td>
+                <button type="reset"> Clear </button>
+            </td>
+        </tr>
+    </table>
+</form>
+</div>
+</body>
+</html>

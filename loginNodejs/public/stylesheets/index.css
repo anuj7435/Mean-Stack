@@ -1,0 +1,43 @@
+body {
+    background-image: url(/images/bg.jpg);
+    padding: 20px;
+    font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+    color: whitesmoke;
+}
+#container {
+    color: black;
+    height: 70vh;
+    text-align: center;
+    padding: 15px;
+    margin: 20px;
+
+}
+#section1, #section2, #section3 {
+    color: black;
+    width: 300px;
+    border: 0.2px solid black;
+    background: aliceblue;
+    margin: 5px;
+    padding: 5px;
+    float: left;
+    text-align: center;
+    font-family: DejaVu Sans, Carlito, sans-serif;
+    font-size: 14px;
+
+}
+a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+#aside{
+    background-color: whitesmoke;
+    width: 150px;
+    float: right;
+    text-align: left;
+    border: 1px solid black;
+    margin: auto;
+    padding: inherit;
+}

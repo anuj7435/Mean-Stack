@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/login.css' />
+</head>
+<body>
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+
+<% include ../views/navBar.ejs %>
+<div id="container">
+<form method="post" action="/login">
+    <h2>
+        Please Enter Your Registered Email ID and Password for Login
+    </h2>
+    <table>
+        <tr>
+            <td>
+                <label>
+                    Email ID :
+                </label>
+            </td>
+            <td>
+                <input type="email" name="loginEmail" id="loginEmail"
+                       placeholder="Enter your registered email id">
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <label>
+                    Password :
+                </label>
+            </td>
+            <td>
+                <input type="password" name="loginPassword" id="loginPassword"
+                       placeholder="Please enter your password">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit"> Submit </button>
+            </td>
+        </tr>
+    </table>
+</form>
+</div>
+</body>
+</html>
